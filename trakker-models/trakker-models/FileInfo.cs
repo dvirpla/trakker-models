@@ -4,6 +4,7 @@ using System.Text;
 
 namespace trakker_models
 {
+    // CR: The class FileInfo Need to inherit FileSystemNode class
     public class FileInfo
     {
     }

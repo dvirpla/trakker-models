@@ -7,5 +7,7 @@ namespace trakker_models
     public class ProgramInfo : FileSystemNode
     {
         public string ProgramDirectoryPath { get; set; }
+
+        // CR: Icon ProgramIcon missing 
     }
 }
