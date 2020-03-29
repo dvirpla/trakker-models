@@ -5,7 +5,7 @@ using TrakkerModels;
 
 namespace TrakkerModels
 {
-    public class ChangedDirectory : ChangedSystemNode
+    public class ChangedDirectory : ChangedFileSystemNode
     {
         public List<FileSystemNode> Children { get; set; }
     }
