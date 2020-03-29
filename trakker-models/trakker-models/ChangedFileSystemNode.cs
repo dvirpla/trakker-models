@@ -7,6 +7,6 @@ namespace TrakkerModels
     public class ChangedFileSystemNode : FileSystemNode
     {
         public FileSystemNode OldFileSystemNode { get; set; }
-        public Resources.ChangedSystemNodeStatus Status { get; set; }
+        public ChangedSystemNodeStatus Status { get; set; }
     }
 }
