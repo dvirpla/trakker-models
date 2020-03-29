@@ -4,7 +4,7 @@ using System.Text;
 
 namespace trakker_models
 {
-    class ChangedFile
+    public class ChangedFile
     {
     }
 }

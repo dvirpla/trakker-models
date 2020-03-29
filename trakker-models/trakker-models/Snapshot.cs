@@ -4,8 +4,9 @@ using System.Text;
 
 namespace trakker_models
 {
-    internal class Snapshot
+    public class Snapshot
     {
+        public Guid Uuid { get; set; }
         public DateTime Time { get; set; }
         public DriveInfo Drive { get; set; }
     }
