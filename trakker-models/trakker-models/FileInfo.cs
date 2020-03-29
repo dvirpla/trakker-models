@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace trakker_models
+namespace TrakkerModels
 {
-    // CR: The class FileInfo Need to inherit FileSystemNode class
-    public class FileInfo
+    public class FileInfo : FileSystemNode
     {
     }
 }

@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace trakker_models
+namespace TrakkerModels
 {
-    // CR: Change the internal modifier to public
-    internal class DirectoryInfo : FileSystemNode
+    public class DirectoryInfo : FileSystemNode
     {
         public List<FileSystemNode> Children { get; set; }
     }

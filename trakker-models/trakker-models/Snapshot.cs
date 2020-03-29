@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-// CR: Change the namespace to CamelCase
-namespace trakker_models
+namespace TrakkerModels
 {
     public class Snapshot
     {
@@ -11,7 +10,5 @@ namespace trakker_models
         public DateTime Time { get; set; }
         public DriveInfo Drive { get; set; }
 
-        //CR: Where is the list of Drive info?
-        // CRR: (Kfir) We decided that snapshots are per-drive, so each one holds 1 drive only
     }
 }

@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace trakker_models
+namespace TrakkerModels
 {
     public class ProgramInfo : FileSystemNode
     {
         public string ProgramDirectoryPath { get; set; }
 
-        // CR: Icon ProgramIcon missing 
+        public string Icon { get; set; }
     }
 }

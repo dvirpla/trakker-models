@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace trakker_models
+namespace TrakkerModels
 {
     public class DriveInfo
     {
