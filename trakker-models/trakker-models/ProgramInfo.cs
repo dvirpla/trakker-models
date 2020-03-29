@@ -4,8 +4,7 @@ using System.Text;
 
 namespace trakker_models
 {
-    // CR: Change the internal modifier to public
-    internal class ProgramInfo : FileSystemNode
+    public class ProgramInfo : FileSystemNode
     {
         public string ProgramDirectoryPath { get; set; }
 

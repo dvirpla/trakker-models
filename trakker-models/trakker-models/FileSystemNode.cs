@@ -4,8 +4,7 @@ using System.Text;
 
 namespace trakker_models
 {
-    // CR: Change the internal modifier to public
-    internal abstract class FileSystemNode
+    public abstract class FileSystemNode
     {
         // CR: (Kfir) Add a "///" documentation and explain that the size is expressed in bytes
         public ulong Size { get; set; }
