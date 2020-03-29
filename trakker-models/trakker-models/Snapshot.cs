@@ -13,5 +13,6 @@ namespace trakker_models
         public DriveInfo Drive { get; set; }
 
         //CR: Where is the list of Drive info?
+        // CRR: (Kfir) We decided that snapshots are per-drive, so each one holds 1 drive only
     }
 }
