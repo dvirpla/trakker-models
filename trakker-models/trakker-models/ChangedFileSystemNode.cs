@@ -8,5 +8,7 @@ namespace TrakkerModels
     {
         public FileSystemNode OldFileSystemNode { get; set; }
         public ChangedSystemNodeStatus Status { get; set; }
+
+        
     }
 }

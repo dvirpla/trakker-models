@@ -12,5 +12,21 @@ namespace TrakkerModels
         public ulong Size { get; set; }
 
         public string FullPath { get; set; }
+
+        protected FileSystemNode(ulong size, string fullPath)
+        {
+            this.Size = size;
+            this.FullPath = fullPath;
+        }
+
+        protected FileSystemNode(string fullPath)
+        {
+            this.FullPath = fullPath;
+        }
+
+        protected FileSystemNode()
+        {
+
+        }
     }
 }

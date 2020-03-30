@@ -6,5 +6,6 @@ namespace TrakkerModels
 {
     public class ChangedProgram : ChangedFileSystemNode
     {
+        
     }
 }

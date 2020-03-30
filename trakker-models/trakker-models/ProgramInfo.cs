@@ -9,5 +9,7 @@ namespace TrakkerModels
         public string ProgramDirectoryPath { get; set; }
 
         public string Icon { get; set; }
+
+        
     }
 }

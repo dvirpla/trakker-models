@@ -8,5 +8,6 @@ namespace TrakkerModels
     public class ChangedDirectory : ChangedFileSystemNode
     {
         public List<FileSystemNode> Children { get; set; }
+
     }
 }
