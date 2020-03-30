@@ -4,6 +4,7 @@ using System.Text;
 
 namespace TrakkerModels
 {
+    [Serializable]
     public class DriveInfo
     {
         public string Name { get; set; }

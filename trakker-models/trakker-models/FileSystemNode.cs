@@ -4,6 +4,7 @@ using System.Text;
 
 namespace TrakkerModels
 {
+    [Serializable]
     public abstract class FileSystemNode
     {
         /// <summary>

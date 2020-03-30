@@ -4,6 +4,7 @@ using System.Text;
 
 namespace TrakkerModels
 {
+    [Serializable]
     public class DirectoryInfo : FileSystemNode
     {
         public List<FileSystemNode> Children { get; set; }
