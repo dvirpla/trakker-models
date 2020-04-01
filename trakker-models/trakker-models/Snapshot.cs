@@ -4,6 +4,7 @@ using System.Text;
 
 namespace TrakkerModels
 {
+    [Serializable]
     public class Snapshot
     {
         public Guid Uuid { get; set; }

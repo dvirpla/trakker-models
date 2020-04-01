@@ -4,21 +4,20 @@ using System.Text;
 
 namespace TrakkerModels
 {
-    public class DriveInfo
+    [Serializable]
+    public class DriveInfo : DirectoryInfo
     {
-        public string Name { get; set; }
-        public List<FileSystemNode> Children { get; set; }
 
-        public DriveInfo(string name)
+        public DriveInfo(string name) : base(name)
         {
-            this.Name = name;
             this.Children = new List<FileSystemNode>();
         }
 
-        public DriveInfo(string name, DirectoryInfo directory)
+        public DriveInfo(string name, DirectoryInfo directory) : base(name,directory.Children)
         {
-            this.Name = name;
-            this.Children = directory.Children;
+        }
+        public DriveInfo(string name, DirectoryInfo directory,ulong size) : base(name, directory.Children,size)
+        {
         }
     }
 }
