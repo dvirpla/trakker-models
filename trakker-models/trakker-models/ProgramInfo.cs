@@ -6,6 +6,7 @@ namespace TrakkerModels
 {
     public class ProgramInfo : FileSystemNode
     {
+        // CR: Add a constructor for this property also.
         public string ProgramDirectoryPath { get; set; }
 
         public string Icon { get; set; }
@@ -19,6 +20,6 @@ namespace TrakkerModels
             this.Icon = icon;
         }
 
-        
+
     }
 }

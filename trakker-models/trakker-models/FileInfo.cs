@@ -13,6 +13,7 @@ namespace TrakkerModels
 
         public FileInfo(string fullPath) : base(fullPath)
         {
+            // CR: Try to think of a way to remove this logic from here. TrakkerModels shouldn't contain logic.
             this.Size = (ulong) new System.IO.FileInfo(fullPath).Length;
         }
     }
