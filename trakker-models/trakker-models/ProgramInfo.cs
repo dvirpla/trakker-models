@@ -10,6 +10,15 @@ namespace TrakkerModels
 
         public string Icon { get; set; }
 
+        public ProgramInfo(string name) : base(name)
+        {
+        }
+
+        public ProgramInfo(string name, string icon) : base(name)
+        {
+            this.Icon = icon;
+        }
+
         
     }
 }

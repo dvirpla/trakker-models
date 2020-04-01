@@ -19,5 +19,15 @@ namespace TrakkerModels
             this.FullPath = fullPath;
             this.Children = new List<FileSystemNode>();
         }
+
+        public DirectoryInfo(string fullPath, List<FileSystemNode> children) : base(fullPath)
+        {
+            this.Children = children;
+        }
+
+        public DirectoryInfo(string fullPath, List<FileSystemNode> children,ulong size) : base(size,fullPath)
+        {
+            this.Children = children;
+        }
     }
 }
