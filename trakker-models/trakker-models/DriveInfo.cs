@@ -13,6 +13,8 @@ namespace TrakkerModels
             this.Children = new List<FileSystemNode>();
         }
 
+        // CR: (Kfir) It's weird to have a parameter that is a parent class. Demand the children instead.
+        //     Also demand size here (we don't need 3 different overloads)
         public DriveInfo(string name, DirectoryInfo directory) : base(name,directory.Children)
         {
         }
