@@ -12,12 +12,12 @@ namespace TrakkerModels
             this.Size = size;
             this.Status = status;
         }
-        public ChangedFile(string fullPath, ulong size, ChangedSystemNodeStatus status, FileSystemNode oldFileSystemNode)
+        public ChangedFile(string fullPath, ulong size, ChangedSystemNodeStatus status, ulong oldSize)
         {
             this.FullPath = fullPath;
             this.Size = size;
             this.Status = status;
-            this.OldFileSystemNode = oldFileSystemNode;
+            this.OldSize = oldSize;
         }
     }
 }

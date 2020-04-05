@@ -6,7 +6,7 @@ namespace TrakkerModels
 {
     public class ChangedFileSystemNode : FileSystemNode
     {
-        public FileSystemNode OldFileSystemNode { get; set; }
+        public ulong OldSize { get; set; }
         public ChangedSystemNodeStatus Status { get; set; }
 
         
