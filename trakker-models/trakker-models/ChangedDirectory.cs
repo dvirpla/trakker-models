@@ -9,5 +9,21 @@ namespace TrakkerModels
     {
         public List<FileSystemNode> Children { get; set; }
 
+        public ChangedDirectory(string fullPath, ulong size, ChangedSystemNodeStatus status, List<FileSystemNode> children)
+        {
+            this.FullPath = fullPath;
+            this.Size = size;
+            this.Status = status;
+            this.Children = children;
+        }
+        public ChangedDirectory(string fullPath, ulong size, ChangedSystemNodeStatus status, List<FileSystemNode> children, FileSystemNode oldFileSystemNode)
+        {
+            this.FullPath = fullPath;
+            this.Size = size;
+            this.Status = status;
+            this.OldFileSystemNode = oldFileSystemNode;
+            this.Children = children;
+        }
+
     }
 }
